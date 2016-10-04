@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.himanshu.studentregistrationform.DisplayActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/textView_title"
+        android:id="@+id/textView_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textView_Name"
+        android:id="@+id/textView_Name"
+        android:layout_below="@+id/textView_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textView_Email"
+        android:id="@+id/textView_email"
+        android:layout_below="@+id/textView_Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textView_department"
+        android:id="@+id/textView_department"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/textView_Mood"
+        android:id="@+id/textView_Mood"
+        android:layout_below="@+id/textView_department"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="54dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_editName"
+        android:src="@drawable/ic_action_edit"
+        android:background="@drawable/abc_cab_background_internal_bg"
+        android:layout_above="@+id/textView_email"
+        android:layout_toRightOf="@+id/textView_NameEntry"
+        android:layout_toEndOf="@+id/textView_NameEntry" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_editEmail"
+        android:src="@drawable/ic_action_edit"
+        android:background="@drawable/abc_cab_background_internal_bg"
+        android:layout_alignBottom="@+id/textView_email"
+        android:layout_alignLeft="@+id/imageButton_editName"
+        android:layout_alignStart="@+id/imageButton_editName" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_editDepartment"
+        android:src="@drawable/ic_action_edit"
+        android:background="@drawable/abc_cab_background_internal_bg"
+        android:layout_above="@+id/textView_Mood"
+        android:layout_alignLeft="@+id/imageButton_editEmail"
+        android:layout_alignStart="@+id/imageButton_editEmail" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_editMood"
+        android:src="@drawable/ic_action_edit"
+        android:background="@drawable/abc_cab_background_internal_bg"
+        android:layout_alignLeft="@+id/imageButton_editDepartment"
+        android:layout_alignStart="@+id/imageButton_editDepartment"
+        android:layout_alignBottom="@+id/textView_Mood" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_NameEntry"
+        android:layout_above="@+id/textView_email"
+        android:layout_alignLeft="@+id/textView_title"
+        android:layout_alignStart="@+id/textView_title"
+        android:layout_alignTop="@+id/textView_Name"
+        android:layout_alignRight="@+id/textView_title"
+        android:layout_alignEnd="@+id/textView_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_EmailEntry"
+        android:layout_alignTop="@+id/textView_email"
+        android:layout_alignLeft="@+id/textView_NameEntry"
+        android:layout_alignStart="@+id/textView_NameEntry" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_DepartmentEntry"
+        android:layout_above="@+id/textView_Mood"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_MoodEntry"
+        android:layout_alignTop="@+id/textView_Mood"
+        android:layout_alignLeft="@+id/textView_EmailEntry"
+        android:layout_alignStart="@+id/textView_EmailEntry" />
+
+</RelativeLayout>
